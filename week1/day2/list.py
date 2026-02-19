@@ -46,4 +46,4 @@ print(sorted(my_chars))
 
 my_names = ['leeroy', 'ruben', 'ben zion', 'Ruben']
 
-print(sorted(my_names))
+print(sorted(my_names)) # 'Ruben' is first. weird.
