@@ -1,0 +1,17 @@
+board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
+
+def display_board():
+    for row in range(len(board)):
+        print(f" {board[row][0]} | {board[row][1]} | {board[row][2]}")
+        print("-----------")
+
+display_board()
+
+print()
+print()
+print()
+
+board[1][2] = "X"
+
+print(board)
+display_board()
