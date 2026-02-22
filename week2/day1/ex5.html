@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  1. Write a JavaScript for loop that will go through the variable names.
+
+if the item is not a string, pass.
+if the item is a string, check if its first letter is in uppercase. If not, change it to uppercase and then display the name.
+
+2. Write a JavaScript for loop that will go through the variable names
+
+if the item is not a string, go out of the loop.
+if the item is a string, display it.
+
+<script>
+  let names= ["john", "sarah", 23, "Rudolf",34]
+
+  for (let name of names) {
+    if (typeof name === "string"){
+      let first = name.slice(0,1).toUpperCase()
+      let last = name.slice(1)
+      console.log(first + last)
+    }
+  }
+  
+  for (let name of names){
+    if (typeof name !== "string") {
+      break
+    } else {
+      console.log(name)
+    }
+  }
+</script>
+</body>
+</html>
