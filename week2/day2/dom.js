@@ -1,0 +1,22 @@
+// HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <title>Week2 Day2</title>
+// </head>
+// <body>
+//   <h1>Week2 Day2</h1>
+//   <script src="expressions2.js"></script>
+// </body>
+// </html>
+
+const html = {
+  head: {
+    title: 'Week2 Day2'
+  },
+  body: {
+    h1: 'Week2 Day2',
+    script: ''
+  }
+};

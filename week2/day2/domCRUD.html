@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 id="heading1">DOM</h1>
+  <p id="par1">hello</p>
+
+  <p id="thing1" class="thing2" name="suess">Cat in the Hat</p>
+
+  <script>
+    // create an element
+    let myPar = document.createElement('p')
+    myPar.innerText = prompt("Enter a paragraph")
+    // <p>The prompt text</p>
+
+    // add it to the DOM
+    document.body.appendChild(myPar)
+
+    // access
+    const h1 = document.getElementById('heading1')
+    console.log(h1.innerText)
+    h1.innerText = 'Hello DI192'
+
+    // remove
+    let removedPar = document.getElementById('par1')
+    document.body.removeChild(removedPar)
+
+    // querySelector
+    // retrieved by CSS id selector
+    let thing1 = document.querySelector('#thing1')
+    console.log(thing1.innerText)
+
+    let thing2 = document.querySelector('.thing2')
+    console.log(thing2.innerText)
+  </script>
+</body>
+</html>

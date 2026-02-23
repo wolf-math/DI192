@@ -1,0 +1,23 @@
+<body>
+  <div id="elem" about="Elephant" style="">THIS IS A ELEPHANT</div>
+  <img src="" alt="my image is broken?">
+  <img src="" alt="my image is broken?">
+
+  <script>
+    let newDiv = document.getElementById("elem")
+
+    //getAttribute('name attribute')
+    newDiv.getAttribute('about'); // return 'Elephant'
+
+    //setAttribute(name attribute, value attribute)
+    newDiv.setAttribute('style', "color:blue;");  
+
+    //you get --> <div id="elem" about="Elephant" style="color:blue" ></div>
+
+    //loop through the attributes of an element
+    // for (let attr of elem.attributes) { // Lists all attributes
+    //   alert(attr.name + '=' + attr.value);
+    // }
+    document.getElementsByTagName("img")[0].src = "https://media.cnn.com/api/v1/images/stellar/prod/c-2026-02-17t012839z-2089970856-rc2cnjatxqtx-rtrmadp-3-usa-trump.jpg?c=original&q=w_1202,c_fill/f_avif";
+  </script>
+</body>

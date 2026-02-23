@@ -1,0 +1,31 @@
+<html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+</body>
+<script>
+  // For each of the questions, find 2 WAYS of accessing :
+  
+  // 1. The div DOM node?
+  const div1 = document.body.firstElementChild
+  console.log(div1)
+  const div2 = document.body.children[0]
+  console.log(div2)
+  
+  // 2. The ul DOM node?
+  const theUl = document.body.children[1]
+  console.log(theUl)
+  const theUl2 = div1.nextElementSibling
+  console.log(theUl2)
+  
+  // 3. The second li (with Pete)?
+  const pete = theUl.lastElementChild
+  console.log(pete)
+  const pete2 = document.body.firstElementChild.nextElementSibling.lastElementChild
+  console.log(pete2)
+
+</script>
+</html>
