@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="jsstyle">Style</button>
+  <button id="another">Unstylish</button>
+  <script>
+    // The event listeners should change the style of the button
+    let x = document.getElementById("jsstyle")
+    // store the function in the callback
+    // it does not execute until the event occurs
+    x.addEventListener('mouseover', respondMouseOver)
+    x.addEventListener('mouseout', respondMouseOut)
+    x.addEventListener('click', respondClick)
+
+    let y = document.getElementById("another")
+    y.addEventListener('mouseout', respondClick)
+    
+    function respondMouseOver (event) {
+      const myBtn = event.target
+      myBtn.style.border = '1px solid purple'
+      myBtn.style.borderRadius = '50%'
+    }
+
+    function respondMouseOut (event) {
+      const myBtn = event.target
+      myBtn.style.border = '1px solid gray'
+      myBtn.style.borderRadius = '3px'
+    }
+
+    function respondClick (event) {
+      const myBtn = event.target
+      myBtn.style.backgroundColor = "green"
+    }
+
+  </script>
+</body>
+</html>

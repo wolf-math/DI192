@@ -1,0 +1,21 @@
+<form name="personform">
+  <input name="age" value="25">
+  <input name="height" value="167">
+</form>
+
+<form name="dogform">
+  <input name="petname" value="Rex">
+  <input name="petage" value="2">
+</form>
+
+<script>
+  // get the form
+  let personForm = document.forms.personform; 
+  let firstElement = personForm.elements.age;
+
+  console.log(firstElement.value); // "25"
+  firstElement.value = '45' 
+  console.log(firstElement.value); // "45"
+
+  firstElement.addEventListener('change', ()=> console.log(firstElement.value))
+</script>
