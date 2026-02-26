@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+  <h1>Functions</h1>
+  
+  <script>
+    
+    // HOISTING - Invoking a function before declaration
+
+    // function declaration
+    // possible() // It works!
+    // function possible () {
+    //   console.log('Is this possible?')
+    // }
+    
+    // function expression
+    // notPossible() // referenceError
+    // const notPossible = function () {
+    //   console.log('It is not possible?')
+    // }
+
+    // arrow function expression
+    // notPossibleArrow() // referenceError
+    // const notPossibleArrow = () => {
+    //   console.log('This is also not possible.')
+    // }
+
+    // RULE:
+    // Function declarations hoist.
+    // Function expressions DO NOT hoist.
+
+    // Immediately Invoked Function Expressions (IIFE)
+
+    // (function () { // anonymous function
+    //   console.log("I'm going to take a picture. Say CHEESE!!!")
+    // })()
+
+    // let sayCheese = (function () {
+    //     console.log("I'm taking a picture say cheese")
+    //     return "I won't take a picture"
+    //   })()
+    // console.log(sayCheese) 
+    // 1. "I'm taking a picture say cheese"
+    // 2. "I won't take a picture"
+
+    // Function inside of a function
+    // Nested function
+    // function takePicture(){
+    //   function sayCheese(){
+    //     console.log("Say cheese")
+    //   }
+
+    //   console.log("I'm going to take 5 pictures")
+    //   sayCheese()
+    //   sayCheese()
+    //   sayCheese()
+    //   sayCheese()
+    //   sayCheese()
+    // }
+    // takePicture()
+
+
+    // CLOSURES
+    // function outer(x) {
+    //   function inner(y) {
+    //     return x + y;
+    //   }
+    //   return inner;
+    // }
+
+    // const myFunc = outer(5) // returns inner. KEEPS VALUE 5 as x
+    // console.dir(myFunc)     // Closure (outer) {x: 5}
+    // let result = myFunc(7)  // adds 5 + 7
+    // console.log(result)     // 12
+
+    // // Another gem from Marc
+    // console.log(outer(5)(7)) // 12
+
+
+
+    // let add = (function () {
+    //   let counter = 0;
+    //   function addOne() {
+    //       counter += 1; 
+    //       return counter
+    //   }
+    //   return addOne
+    // })();
+
+    // console.log(add()) // 1
+    // console.log(add()) // 2
+    // console.log(add()) // 3
+    // console.dir(add)   // Closure {counter: 3}
+
+    // Currying
+    const add = a => b => a + b;
+
+    function addAgain (a) {
+      return function (b) {
+        return a + b
+      }
+    }
+
+    console.log(add(6)(7) === addAgain(6)(7))
+
+  </script>
+</body>
+</html>

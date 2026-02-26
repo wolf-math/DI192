@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scope</title>
+</head>
+<body>
+  <h1>Scope</h1>
+  <script>
+
+    // Use x before declare with var. Works!
+
+    // console.log(x) // undefined
+    // var x = 10     // declaration
+    // console.log(x) // 10
+
+    // Use x before declare with let. Doesn't work!
+
+    // console.log(y)  // reference error - code stops
+    // let y = 11      // doesn't run
+    // console.log(y)  // doesn't run
+
+    // redeclare g with var. Works!
+
+    // var g = "cool dude"
+    // console.log(g) // "cool dude"
+    // var g = 10     // redeclare g
+    // console.log(g) // 10
+
+    // redeclare f with let. Doesn't work!
+
+    // let f = "five"
+    // let f = 5  // syntaxError
+    // console.log(f)
+
+    // Block scope and redeclare a with let. Works!
+
+    // let a = 'argument'
+    // { // block scope
+    //   let a = 'shalom'
+    //   console.log (a)  // 'shalom'
+    // }
+    // console.log(a) // 'argument'
+
+    // Block scope and redeclare a with let. 
+    // Doesn't work if a is referenced first
+
+    // let a = 'argument'
+    // { // block scope
+    //   console.log(a)   // referenceError - used a before declaration
+    //   let a = 'shalom'
+    //   console.log (a)  // 'shalom'
+    // }
+    // console.log(a) // 'argument'
+
+    // Block scope 
+    // var a = 'argument'
+    // { // block scope
+    //   console.log(a)   // 'argument'
+    //   var a = 'shalom'
+    //   console.log (a)  // 'shalom'
+    // }
+    // console.log(a) // 'shalom'
+
+    // let a = 'argument'
+    // { // block scope
+    //   console.log(a)   // 'argument'
+    // }
+    // console.log(a) // 'argument'
+    
+    // function checkAge(age) {
+    //   if (age < 18) {
+    //     const message = "Sorry, you're too young.";
+    //   } else {
+    //     const message = "Yay! You're old enough!";
+    //   } 
+    //   return message
+    // }
+    // console.log(checkAge(21));  // referenceError
+
+    // Marc's fixed version
+    // function checkAge(age) {
+    //   let message
+    //   if (age < 18) {
+    //     message = "Sorry, you're too young.";
+    //   } else {
+    //     message = "Yay! You're old enough!";
+    //   } 
+    //   return message
+    // }
+    // console.log(checkAge(21));  // "Yay! You're old enough!"
+
+    // function checkAge(age) {
+    //   return age < 18 ? "Sorry, you're too young." : "Yay! You're old enough!"
+    // }
+
+    // console.log(checkAge(21));
+    // console.log(checkAge(12));
+
+    let myStr = prompt("type Hello")
+    myStr === 'Hello' ? alert('Hi') : alert('Bye')
+
+  </script>
+</body>
+</html>
