@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes</title>
+</head>
+<body>
+  <h1>Classes</h1>
+  <script>
+
+    class Rectangle {
+      constructor(height, width) {
+        this.height = height;
+        this.width = width;
+      }
+
+      getArea() {
+        this.area = this.height * this.width
+        return this.height * this.width  
+      } 
+    }
+
+    let myShape = new Rectangle(20, 14)
+
+    // console.log(myShape)
+    // console.log(myShape.height) // 20
+    // console.log(myShape.width) // 14
+    // console.log(myShape.getArea()) // 280
+
+    
+    // let myOtherShape = new Rectangle(9, 11)
+
+    // console.log(myOtherShape.area) // undefined
+    // console.log(myOtherShape.getArea()) // 99
+    // console.log(myOtherShape.area) // 99
+
+
+    // Exercise
+    // Analyse the code below. Display the type of each rabbit and make them speak
+
+    class Rabbit {
+      constructor(type) {
+        this.type = type;
+      }
+
+      speak(line) {
+        console.log(`The ${this.type} rabbit says '${line}'`);
+      }
+
+      hop(distance) {
+        console.log(`The ${this.type} rabbit jumped ${distance} meters.`)
+      }
+    }
+
+    let killerRabbit = new Rabbit("killer");
+    let blackRabbit = new Rabbit("black");
+
+    console.log(killerRabbit.type)
+    killerRabbit.speak('I like DI192')
+
+    console.log(blackRabbit.type)
+    blackRabbit.speak('Twelve + 12 = Twenty 4')
+
+    blackRabbit.hop(10)
+
+
+  </script>
+</body>
+</html>

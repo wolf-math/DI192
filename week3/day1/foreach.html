@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forEach</title>
+</head>
+<body>
+  <h1>forEach</h1>
+  <script>
+    const myArr = [1,2,3,4]
+    // myArr.forEach((num, i) => console.log(num**2, i))
+
+    function square(numb) {
+      console.log(numb ** 2)
+    }
+
+    function cube(numb) {
+      console.log(numb ** 3)
+    }
+
+    // outside function
+    // myArr.forEach(square)
+    // myArr.forEach(cube)
+
+    // equivalent with for loop
+    // for (let i=0; i<myArr.length; i++){
+    //   console.log(myArr[i]**2)
+    // }
+
+    const numbers = [10,11,12,15,20];
+    // Using the for each method, display only the even numbers in the array
+    numbers.forEach((num) => {
+      if (num%2 === 0){
+        console.log(num)
+      }
+    })
+
+
+
+
+  </script>
+</body>
+</html>

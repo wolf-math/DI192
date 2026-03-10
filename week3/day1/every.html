@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Every</title>
+</head>
+<body>
+  <h1>Every</h1>
+
+    <script>
+      const tens = [10,20,30,40,50]
+
+      // checks if 1 element matches
+      const eightSome = tens.some((num) => num % 8 === 0)
+      console.log(eightSome) // true
+
+      // checks if all elements match
+      const eightEvery = tens.every((num) => num % 8 === 0)
+      console.log(eightEvery) // false
+
+      const fiveEvery = tens.every(num => num % 5 === 0)
+      console.log(fiveEvery) // true
+
+      const words = ["hello","Hey","hola"];
+      // Check if all the elements of the array start with the letter 'h'
+      const startsWithH = words.every((word) => word.toLowerCase().startsWith('h'))
+      console.log('Starts with "h"?', startsWithH)
+
+    </script>
+  
+</body>
+</html>

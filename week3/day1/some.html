@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some</title>
+</head>
+<body>
+  <h1>Some</h1>
+  
+  <script>
+    const tens = [10,20,30,40,50]
+
+    // these 3 are equivalent
+    const nine = tens.some(num => num % 9 == 0)
+    const nine2 = tens.some((num) => (num % 9 == 0))
+    const nine3 = tens.some((num) => {return num % 9 == 0})
+    // console.log(nine) // false
+
+    // console.log(tens.some((num) => (num % 9 == 0)))
+
+    const eight = tens.some((num) => num % 8 === 0)
+    // console.log(eight) // true
+
+    const words = ["wow","hey","bye"];
+    // Check if at least one element of the array starts with the letter 'h'
+    const startsWithH = words.some((word) => word.startsWith('h'))
+    console.log(startsWithH)
+
+  </script>
+</body>
+</html>
