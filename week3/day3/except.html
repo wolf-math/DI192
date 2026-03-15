@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exceptions</title>
+</head>
+<body>
+  <h1>Exceptions</h1>
+  <script>
+    try {
+      console.log("hello there!")
+      throw TypeError
+      let student = "Ravite"
+      console.log(`The student is ${student}.`)
+      console.log("Everyone say \"hi\"")
+    } catch(e) {
+      console.log("there was an error")
+      console.log(e)
+    } finally {
+      console.log("all done")
+    }
+
+  </script>
+</body>
+</html>

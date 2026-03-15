@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex1</title>
+</head>
+<body>
+  <h1>Ex1</h1>
+  
+  <script>
+    // Instructions
+    // Create a function called displayNumbersDivisible() that takes no parameter.
+
+    // In the function, loop through numbers 0 to 500.
+
+    // Console.log all the numbers divisible by 23.
+
+    // At the end, console.log the sum of all numbers that are divisible by 23.
+
+    // Outcome : 0 23 46 69 92 115 138 161 184 207 230 253 276 299 322 345 
+    // 368 391 414 437 460 483
+    // Sum : 5313
+
+    function displayNumbersDivisible(){
+      let total = 0 
+      for (let i=0; i<=500; i++) {
+        if (i%23 === 0){
+          console.log(i)
+          total += i
+        }
+      }
+      console.log(total)
+    }
+
+    displayNumbersDivisible()
+
+  </script>
+</body>
+</html>
