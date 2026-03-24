@@ -26,10 +26,10 @@ async function displayInfo() {
 
   // step 6: Loading indicator while fetching info
   container.innerHTML = `
-    <div class="fa-3x">
+    <div class="fa-3x" id="icon">
       <i class="fa-solid fa-sync fa-spin"></i>
-      </div>
-      `;
+    </div>
+  `;
 
   const { name, gender, height, birth_year, homeworld } = await getInfo();
   // clear container after loading

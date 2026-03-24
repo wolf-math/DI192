@@ -6,6 +6,11 @@ h1, h2 {
   color: white
 }
 
+#icon {
+  color: white;
+  font-size: 10rem;
+}
+
 #container {
   width: 400px;
   height: 300px; 
