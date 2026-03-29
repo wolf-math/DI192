@@ -22,9 +22,3 @@ function quadratic(a: number, b: number, c: number): number {
 
   return 5;
 }
-
-// type inference
-let coolguy = 'Xiao';
-coolguy = 'Marc';
-
-coolguy = 42;
