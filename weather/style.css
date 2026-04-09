@@ -1,0 +1,21 @@
+body {
+  background-color: darkslategrey;
+}
+
+#app {
+  background-color: blanchedalmond;
+  max-width: 600px;
+  max-height: 90vh;
+  min-height: 30vh;
+  padding: 40px; 
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#form {
+  margin: 0 auto
+}
+
+#city {
+  cursor: pointer;
+}
