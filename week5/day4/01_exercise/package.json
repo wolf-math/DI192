@@ -1,0 +1,14 @@
+{
+  "name": "01_ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "first-express-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
