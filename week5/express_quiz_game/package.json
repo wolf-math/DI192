@@ -1,0 +1,25 @@
+{
+  "name": "di192",
+  "version": "1.0.0",
+  "description": "These are the coding exercises for DI 192",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolf-math/DI192.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolf-math/DI192/issues"
+  },
+  "homepage": "https://github.com/wolf-math/DI192#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
