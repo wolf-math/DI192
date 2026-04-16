@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz</title>
+  <title>Trivia Quiz</title>
 </head>
 <body>
-  <h1>Hello! I am a quiz!</h1>
-  <div id="quiz_container">
+  <h1>Trivia Quiz</h1>
+
+  <div id="quiz-container">
+    <p id="feedback"></p>
+
+    <p id="question">Loading...</p>
+
+    <form id="questionForm">
+      <input type="text" id="answer" placeholder="Your answer" />
+      <button type="submit">Submit</button>
+    </form>
 
   </div>
-  <script src="quiz_client.js"></script>
+
+  <script src="quizClient.js"></script>
 </body>
 </html>
